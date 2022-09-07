@@ -7,5 +7,11 @@ const app = express()
 const adminJS = new AdminJS({
     databases: [],
     rootPath: '/admin',
-    resources: []
+    resources: [],
 })
+
+const router = AdminJSExpress.buildRouter(adminJS)
+
+app.use(adminJS.options.rootPath, router)
+
+app.listen(3000, () => console.log(`rodando na porta 5000`))
