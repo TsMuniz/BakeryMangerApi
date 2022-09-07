@@ -1,8 +1,9 @@
 {
   "name": "bakerymanagerapi",
   "version": "1.0.0",
-  "description": "",
+  "description": "Api do projeto BakeryManger",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/TsMuniz/BakeryMangerApi/issues"
   },
-  "homepage": "https://github.com/TsMuniz/BakeryMangerApi#readme"
+  "homepage": "https://github.com/TsMuniz/BakeryMangerApi#readme",
+  "dependencies": {
+    "@adminjs/express": "^5.0.0",
+    "express": "^4.18.1",
+    "express-formidable": "^1.2.0"
+  }
 }
