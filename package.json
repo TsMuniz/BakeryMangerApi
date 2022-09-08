@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Api do projeto BakeryManger",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/server.js"
@@ -20,15 +19,21 @@
   },
   "homepage": "https://github.com/TsMuniz/BakeryMangerApi#readme",
   "dependencies": {
+    "-": "^0.0.1",
     "@adminjs/express": "^5.0.0",
+    "@adminjs/sequelize": "^3.0.0",
     "adminjs": "^6.2.0",
+    "dotenv": "^16.0.2",
     "express": "^4.18.1",
     "express-formidable": "^1.2.0",
     "express-session": "^1.17.3",
+    "sequelize": "^6.21.4",
     "tslib": "^2.4.0"
   },
   "devDependencies": {
+    "mysql2": "^2.3.3",
     "nodemon": "^2.0.19",
+    "sequelize-cli": "^6.4.1",
     "sucrase": "^3.25.0"
   }
 }
